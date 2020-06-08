@@ -1,4 +1,28 @@
+The goal of this boilerplate is to make react projects simpler, faster, and easier for developers to work with.
+
+## Technologies used
+
+- [Create React App](https://github.com/facebook/create-react-app)
+- [SASS with CSS Module](https://create-react-app.dev/docs/adding-a-sass-stylesheet) - to encapsulate styles to component itself
+- [Prettier](https://prettier.io) - formats code every commit to enforce standard coding styles.
+- [Storybook](https://storybook.js.org) - Dev environment and documentation for reusable UI Components
+- [MobX](https://mobx.js.org/) - Simple, scalable state management
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Initialization
+
+Run
+
+### `yarn install`
+
+**Note:** If you are using windows, create a **.env.local** file at the root folder and add this line:
+
+```
+SASS_PATH=./node_modules;./src/Styles
+```
 
 ## Available Scripts
 
