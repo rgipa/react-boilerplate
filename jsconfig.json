@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "checkJs": true,
+    "resolveJsonModule": true,
+    "target": "es2015",
+    "module": "esnext"
+  },
+  "include": ["src"]
+}

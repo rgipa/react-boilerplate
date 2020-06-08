@@ -1,0 +1,9 @@
+@import 'variables';
+
+.appFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid $dark-1;
+  padding-top: 3px;
+}
