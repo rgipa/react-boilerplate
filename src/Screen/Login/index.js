@@ -1,10 +1,10 @@
 import React from 'react'
 
 import AppShell from 'Container/AppShell'
-import TodoList from 'Container/TodoList'
+import LoginForm from './container/LoginForm'
 
 export default () => (
   <AppShell>
-    <TodoList />
+    <LoginForm />
   </AppShell>
 )
