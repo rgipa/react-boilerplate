@@ -14,12 +14,18 @@ export default observer(() => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Input name="username" ref={register} />
-      <Input name="password" type="password" ref={register} />
+      <Input name="username" ref={register} data-test-id="username" />
+      <Input
+        name="password"
+        type="password"
+        ref={register}
+        data-test-id="password"
+      />
       <Button
         label={'Login'}
         isLoading={formState.isSubmitting}
         type="submit"
+        data-test-id="submit"
       />
     </form>
   )
