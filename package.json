@@ -26,7 +26,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "cypress:open": "cypress open"
   },
   "husky": {
     "hooks": {
@@ -65,6 +66,7 @@
     "@storybook/cli": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.0",
     "@storybook/react": "^5.3.19",
+    "cypress": "^3.6.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.9",
     "node-sass": "^4.14.1",
