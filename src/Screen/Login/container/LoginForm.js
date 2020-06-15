@@ -10,9 +10,7 @@ import Button from 'Component/atom/Button'
 export default observer(() => {
   const { register, handleSubmit, formState } = useForm()
 
-  const onSubmit = React.useCallback((values) => {
-    return authModule.login(values)
-  }, [])
+  const onSubmit = React.useCallback((values) => authModule.login(values), [])
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>

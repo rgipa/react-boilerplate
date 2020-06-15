@@ -11,6 +11,7 @@ import ContactScreen from 'Screen/Contact'
 import TodoDetailsScreen from 'Screen/TodoDetails'
 import LoginScreen from 'Screen/Login'
 import PageNotFoundScreen from 'Screen/PageNotFound'
+import FormScreen from 'Screen/Form'
 
 export default observer(() => {
   if (!authModule.state.token) {
@@ -27,6 +28,7 @@ export default observer(() => {
   return (
     <Switch>
       <Route path="/home" component={HomeScreen} />
+      <Route path="/form" component={FormScreen} />
       <Route path="/culture" component={CultureScreen} />
       <Route path="/work" component={WorkScreen} />
       <Route path="/contact" component={ContactScreen} />
