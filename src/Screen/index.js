@@ -12,6 +12,7 @@ import TodoDetailsScreen from 'Screen/TodoDetails'
 import LoginScreen from 'Screen/Login'
 import PageNotFoundScreen from 'Screen/PageNotFound'
 import FormScreen from 'Screen/Form'
+import SampleTableScreen from './SampleTableScreen'
 
 export default observer(() => {
   if (!authModule.state.token) {
@@ -33,6 +34,7 @@ export default observer(() => {
       <Route path="/work" component={WorkScreen} />
       <Route path="/contact" component={ContactScreen} />
       <Route path="/todo/:id" component={TodoDetailsScreen} />
+      <Route path="/sample-table" component={SampleTableScreen} />
       <Redirect path={'/login'} to={'/home'} />
       <Redirect path={'/'} exact to={'/home'} />
       <Route component={PageNotFoundScreen} />
