@@ -11,6 +11,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "clsx": "^1.1.1",
+    "cross-env": "^7.0.2",
     "mobx": "^5.15.4",
     "mobx-react": "^6.2.2",
     "mobx-react-router": "^4.1.0",
@@ -28,7 +29,11 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "deploy:test": "npm run build && serve build -l 3031 -s",
+    "cypress:run": "cypress run",
+    "test:e2e": "start-server-and-test deploy:test http://localhost:3031 cypress:run --record false",
+    "test:watch": "cross-env CYPRESS_BASE_URL=http://localhost:3000 cypress open"
   },
   "husky": {
     "hooks": {
@@ -67,12 +72,15 @@
     "@storybook/cli": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.0",
     "@storybook/react": "^5.3.19",
+    "cypress": "^3.6.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.9",
     "node-sass": "^4.14.1",
     "normalize-scss": "^7.0.1",
     "prettier": "^2.0.5",
     "react-router-dom": "^5.2.0",
-    "source-map-explorer": "^2.4.2"
+    "serve": "^11.3.2",
+    "source-map-explorer": "^2.4.2",
+    "start-server-and-test": "^1.11.0"
   }
 }
