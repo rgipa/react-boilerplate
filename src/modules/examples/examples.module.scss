@@ -1,0 +1,25 @@
+@import 'variables';
+
+.link {
+  color: $dark-1;
+  font: $font-link-1;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.nav {
+  flex: 0 0 300px;
+}
+
+.content {
+  flex: 1;
+}
+
+.topic {
+  list-style: none;
+  padding: 0;
+}
