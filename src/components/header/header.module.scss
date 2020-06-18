@@ -1,0 +1,29 @@
+@import 'variables';
+
+.appHeader {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.navItem {
+  padding: 2px 7px;
+}
+
+.link {
+  color: $dark-1;
+  font: $font-link-1;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.logo {
+  height: 50px;
+}

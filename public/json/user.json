@@ -1,4 +1,7 @@
 {
-  "username": "exist",
+  "user": {
+    "name": "foobar",
+    "permissions": ["CLIENT.VIEW"]
+  },
   "token": "thisisatoken"
 }
