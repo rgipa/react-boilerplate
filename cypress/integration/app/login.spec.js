@@ -10,6 +10,10 @@ context('Login', () => {
 
     cy.get('[data-test-id="submit"]').click()
 
-    cy.url().should('include', '/home')
+    cy.url().should('not.include', '/login')
+
+    cy.get('[href="/culture"]').click()
+
+    cy.url().should('include', '/culture')
   })
 })
